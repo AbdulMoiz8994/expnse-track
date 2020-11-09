@@ -1,0 +1,167 @@
+body{
+  min-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 300px;
+  margin: 0;
+  overflow: scroll;
+}
+
+
+
+.header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;  
+  font-weight: lighter;
+  text-transform: capitalize;
+  word-spacing: normal;
+  margin: 40px 40px 40px 60px;
+  margin-top: 20px;
+}
+.balance{
+  margin-top: 50px;
+}
+h5{
+  font-size: 20px;
+  text-align: center;
+}
+.totalamount{
+   font-weight: bolder;
+   font-size: 35px;
+   text-align: center;
+}
+
+.summary{
+ display: flex;
+ justify-content: space-between;
+ font-size: 20px;
+ margin: 10px 80px;
+ padding: 25px;
+ background-color: white;
+ box-shadow: 0 0 20px grey;
+ height: 110px;
+}
+.plus{
+  font-weight: bolder;
+  color: mediumseagreen;
+}
+.minus{
+  font-weight: bolder;
+  color: firebrick;
+}
+.summary > div{
+  flex: 1;
+  text-align: center;
+  height: 70px;
+} 
+.summary > div:first-of-type{
+  border-right: 2px solid lightgray;
+}
+.trans-history{
+  text-align: center;
+  font-weight: bold;
+  margin: 40px;
+}
+.trans-history > hr{
+  border: 1px solid black;
+
+}
+.list li {
+  display: flex;
+  justify-content: space-between !important;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 30px 10px 0;
+  border-radius: 5px;
+color: white;
+font-size: larger;
+}
+.list li.liplus:hover{
+  background-color: mediumseagreen;
+
+}
+.list li.liplus{
+  background-color:wheat;
+  border-right: 8px solid mediumspringgreen;
+  color: black;
+}
+
+.list li.liminus:hover{
+  background-color: firebrick;
+}
+.list li.liminus{
+  background-color: wheat;
+  border-right: 8px solid maroon;
+  color: black;
+}
+
+h3{
+  text-align: center;
+}
+.addTranscation > hr{
+  border: 1px solid black;
+  margin: 0 40px 15px 40px;
+}
+@media screen and (max-width: 1500px) {
+.label{
+  margin-left: 70px;
+  font-size:20px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+}
+.outlined-basic{
+  font-weight: bolder !important;
+}
+
+.btn{
+  margin: 10px !important;
+  padding: 10px !important;
+  margin: 20px 0 0 70px !important;
+  max-width:  70% !important;
+}
+@media screen and (max-width: 1500px) {
+.inputbox{
+  margin: 3px 0px 5px 70px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: block !important;
+  width: 70% !important;
+}
+}
+.cross-button{
+  cursor: pointer;
+  background-color: #8a6a66;
+   border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  position: absolute;
+  padding: 2px 5px;
+  transform: translate(-140%,-6%) !important;
+  opacity: 0.5;
+}
+.cross-button:hover{
+  opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
