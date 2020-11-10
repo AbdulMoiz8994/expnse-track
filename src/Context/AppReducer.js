@@ -8,7 +8,7 @@ export default (state, action) => {
             }
         case "ADD_TRANSCATION":
             return {
-                ...state,
+                // ...state,
                 transcations: [...state.transcations, action.payload]
             }
         default:

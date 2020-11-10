@@ -11,7 +11,11 @@ export default function AddTranscation() {
 
   const { addTranscation } = useContext(GlobalContext)
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
+    if(+(amount) === 0){
+      alert("PLease type Correct Value")
+      return false;
+    }
     e.preventDefault();
 
 
@@ -35,9 +39,9 @@ export default function AddTranscation() {
       <hr />
       <form onSubmit={onSubmit}>
         <label className="label" htmlFor="description">Description</label><br />
-        <input className="inputbox" type="text" value={description} onChange={(e) => setDescription(e.target.value)} /><br />
+        <input className="inputbox" type="text" value={description}  onChange={(e) => setDescription(e.target.value)} required/><br />
         <label className="label" htmlFor="transcationamount">Transcation Amount</label><br />
-        <input className="inputbox" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
+        <input className="inputbox" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} required/>
         <button type="submit" className="btn btn-outline-primary btn-lg col-8">Add Transaction</button>
 
       </form>
